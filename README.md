@@ -1,4 +1,10 @@
 idmm
 ====
 
-dropdown multi-menu
+dropdown multi-menu use javascript & css
+
+#useage
+
+	$(document).ready(function(){
+		$('#dropMenu').dropDownMenu({});
+	});
