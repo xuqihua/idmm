@@ -1,0 +1,25 @@
+.clear {clear:both;} 
+.clearfix:after { content: "."; display: block; height: 0; font-size:0; clear: both; visibility: hidden;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+
+.dropMenu, .dropMenu * {margin:0;padding:0;list-style:none;z-index: 9;}
+.dropMenu li{float:left;list-style:none;position:relative;display: inline;}
+.dropMenu li a{text-decoration:none;}
+.dropMenu li ul{width:142px;position:absolute;top:-999em;clear: both;}
+.dropMenu li.dmm-hover ul{top:1em;left:0;padding:0;}
+.dropMenu li ul li.dmm-hover ul{left:60px;top:0;}
+
+.dropMenu {height: 28px;width: 650px;background:#3D67BD;font-size: 12px;}
+.dropMenu li a {background: #3D67BD;color: #FFF;display: block;text-align: center;text-decoration: none;}
+.dropMenu li a:hover,.dropMenu li.dmm-hover>a {background:  #213866;}
+.dropMenu li a div{cursor:pointer;padding: 7px 10px;width: 70px;white-space: nowrap;}
+.dropMenu li.dmm-hover ul{top:28px;}
+.dropMenu li ul li{width:142px;height:28px;}
+.dropMenu li ul li a{width:142px;padding:0;text-align: left;color: #FFF;border-top: 1px solid #FFF;}
+.dropMenu li ul li a div{width: auto;}
+.dropMenu li ul li a:hover,.dropMenu li ul li.lidmm-hover>a {background: #213866;border-color: #528BFF;color: #FFF;}
+.dropMenu li ul li.dmm-hover ul{width:142px;left:142px;}
+.dropMenu li ul li.dmm-child >ul{border-left: 1px solid #FFF;}
+.dropMenu li ul li.dmm-child > a  {background:#3D67BD url(images/arroww.gif) no-repeat right center; }
+.dropMenu li ul li.dmm-child > a:hover  {background:#213866 url(images/arroww.gif) no-repeat right center;}

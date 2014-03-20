@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>jquery DropdownMenu</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.hoverIndent.js"></script>
+	<script type="text/javascript" src="jquery.dropdownmenu.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dropMenu').dropDownMenu({});
+});
+</script>
+</head>
+<body>
+<ul class="dropMenu clearfix" id="dropMenu">
+	<li>
+		<a href="#" ><div>Home</div></a>
+		<ul>
+			<li><a href="#"><div>Page1</div></a></li>
+			<li><a href="#"><div>Page2</div></a></li>
+			<li><a href="#"><div>Page3</div></a></li>
+			<li><a href="#"><div>Page4</div></a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#"><div>News</div></a>
+		<ul>
+			<li><a href="#"><div>Page1</div></a></li>
+			<li><a href="#"><div>Page2</div></a></li>
+			<li><a href="#"><div>Page3</div></a></li>
+			<li><a href="#"><div>Page4</div></a>
+				<ul>
+					<li><a href="#"><div>Page1</div></a></li>
+					<li><a href="#"><div>Page2</div></a>
+						<ul>
+							<li><a href="#"><div>Page3</div></a></li>
+							<li><a href="#"><div>Page4</div></a>
+						<ul>
+					<li><a href="#"><div>Page3</div></a></li>
+					<li><a href="#"><div>Page4</div></a></li>
+				</ul>
+						</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#"><div>Contact</div></a>
+		<ul>
+			<li><a href="#"><div>Page1</div></a></li>
+			<li><a href="#"><div>Page2</div></a></li>
+		</ul>
+	</li>
+	<li><a href="#"><div>Last</div></a></li>
+</ul>
+</body>
+</html>
