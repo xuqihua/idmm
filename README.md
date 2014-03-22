@@ -3,7 +3,7 @@ idmm
 
 dropdown multi-menu use javascript & css
 
-#useage
+#example
 
 	$(document).ready(function(){
 		$('#dropMenu').dropDownMenu({});
